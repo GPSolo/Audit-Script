@@ -1,0 +1,22 @@
+# SUID/SGID baseline allowlist
+# One absolute path per line. Anything found by audit.sh NOT in this list
+# gets flagged as a WARN. Customize per-host — this is a generic starting
+# point covering binaries common on most mainstream distros.
+#
+# Regenerate a starting point on a known-clean host with:
+#   find / -xdev \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null | sort > suid-baseline.txt
+ 
+/usr/bin/sudo
+/usr/bin/su
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/mount
+/usr/bin/umount
+/usr/bin/ping
+/usr/bin/fusermount3
+/usr/lib/polkit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
