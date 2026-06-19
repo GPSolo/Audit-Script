@@ -1,0 +1,292 @@
+# Security Audit Report
+
+- Host: `Hostname`
+- Date: Thu Jun 18 08:25:03 PM MDT 2026
+
+## Findings
+
+- [WARN] rkhunter: Warning: Checking for prerequisites               [ Warning ]
+- [WARN] rkhunter:          The file of stored file properties (rkhunter.dat) does not exist, and should be created. To do this type in 'rkhunter --propupd'.
+- [WARN] rkhunter: Warning: WARNING! It is the users responsibility to ensure that when the '--propupd' option
+- [WARN] rkhunter:          is used, all the files on their system are known to be genuine, and installed from a
+- [WARN] rkhunter:          reliable source. The rkhunter '--check' option will compare the current file properties
+- [WARN] rkhunter:          against previously stored values, and report if any values differ. However, rkhunter
+- [WARN] rkhunter:          cannot determine what has caused the change, that is for the user to do.
+- [WARN] rkhunter: Warning: The command '/usr/bin/egrep' has been replaced by a script: /usr/bin/egrep: POSIX shell script, ASCII text executable
+- [WARN] rkhunter: Warning: The command '/usr/bin/fgrep' has been replaced by a script: /usr/bin/fgrep: POSIX shell script, ASCII text executable
+- [WARN] rkhunter: Warning: The command '/usr/bin/ldd' has been replaced by a script: /usr/bin/ldd: Bourne-Again shell script, ASCII text executable
+- [WARN] rkhunter: Warning: Network TCP port 7000 is being used by /usr/bin/docker-proxy. Possible rootkit: Possible rogue IRC bot
+- [WARN] rkhunter:          Use the 'lsof -i' or 'netstat -an' command to check this.
+- [WARN] rkhunter: Warning: The SSH configuration option 'PermitRootLogin' has not been set.
+- [WARN] rkhunter:          The default value may be 'yes', to allow root access.
+- [WARN] rkhunter: Warning: The SSH configuration option 'Protocol' has not been set.
+- [WARN] rkhunter:          The default value may be '2,1', to allow the use of protocol version 1.
+- [WARN] rkhunter: Warning: Hidden file found: /etc/.updated: ASCII text
+- [WARN] rkhunter: Warning: Hidden file found: /usr/share/man/man5/.k5login.5.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 19
+- [WARN] rkhunter: Warning: Hidden file found: /usr/share/man/man5/.k5identity.5.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 22
+- [INFO] ClamAV: no infected files found
+- [INFO] AppArmor: 1 profile(s) enforced, 1 in complain mode
+- [WARN] No SUID baseline file at /home/gp/Projects/Audit-Script/suid-baseline.txt — treating every result as new
+- [WARN] SUID/SGID binary not in baseline allowlist: /opt/brave-bin/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /opt/github-desktop/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /opt/Mullvad VPN/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /opt/thorium-browser/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /opt/vivaldi/vivaldi-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/cdda2wav
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/cdrecord
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/crontab
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/fusermount
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/fusermount3
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/fusermount-glusterfs
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/ksu
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/mount.cifs
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/mount.ecryptfs_private
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/mount.nfs
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/ndisc6
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/pkexec
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/plocate
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/rdisc6
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/readcd
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/rltraceroute6
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/rscsi
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/sg
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/slimlock
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/sudo
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/vmware-authd
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/bin/write
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/dbus-daemon-launch-helper
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/electron38/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/electron39/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/electron42/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/libgtop/libgtop_server2
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/qemu/qemu-bridge-helper
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/ssh/ssh-keysign
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/utempter/utempter
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/vmware/bin/vmware-vmx
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/vmware/bin/vmware-vmx-debug
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/vmware/bin/vmware-vmx-stats
+- [WARN] SUID/SGID binary not in baseline allowlist: /usr/lib/Xorg.wrap
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/06981959049ef186fe6222bc5157be15eeff7398186340008ca305174c3b0a42/diff/usr/bin/ssh-agent
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/06981959049ef186fe6222bc5157be15eeff7398186340008ca305174c3b0a42/diff/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/06981959049ef186fe6222bc5157be15eeff7398186340008ca305174c3b0a42/diff/usr/lib/openssh/ssh-keysign
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/06981959049ef186fe6222bc5157be15eeff7398186340008ca305174c3b0a42/diff/usr/lib/polkit-1/polkit-agent-helper-1
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/098c90bc063a138483e1b334035125abd76ed400f937323a525474b98e8e64a7/diff/opt/brave.com/brave/chrome-sandbox
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/1b38da19fddbe72e102ac0a5383f00dbfef2daaa59713165935c821b3069d774/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/20f81b4844e4ad5a2ba40ee982fb3b393a2be7081d5caa04ce0baef8f9d3ebed/diff/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/382e033a01ed3741c73aa45a7496bf4547bdf6e9fe3c4fb6e3fe31977dab9306/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/sbin/pam_extrausers_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/3978f6f5aed418b8057f4b8ecdf9d53a39753f22e07283ff85eca9ca6deb2fab/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4e64b4d39d6dd5d8a0ce84eb599d6f8624a2d169e2d89537f64ae4894bf05852/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4e64b4d39d6dd5d8a0ce84eb599d6f8624a2d169e2d89537f64ae4894bf05852/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4e64b4d39d6dd5d8a0ce84eb599d6f8624a2d169e2d89537f64ae4894bf05852/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/4jqfm590iuynl0jd4g92nufna/diff/srv/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/6c189c213219981c059faede72fab22d858b451d1c6aa6db3c9f947a721552e0/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/991322e5148d8aa92eb4ca9ec6a3e075a825ddf7631b9d76f6c77e1d367d747c/diff/usr/bin/pkexec
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/991322e5148d8aa92eb4ca9ec6a3e075a825ddf7631b9d76f6c77e1d367d747c/diff/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/991322e5148d8aa92eb4ca9ec6a3e075a825ddf7631b9d76f6c77e1d367d747c/diff/usr/lib/policykit-1/polkit-agent-helper-1
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/99f797a1a6f0d02db6e674cd51db50583e07f19478658780e5c4aa795f29c6d2/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/99f797a1a6f0d02db6e674cd51db50583e07f19478658780e5c4aa795f29c6d2/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/99f797a1a6f0d02db6e674cd51db50583e07f19478658780e5c4aa795f29c6d2/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/9a068746a9ed8f4b794a11319e3c860f09935d16aa48a04a7856e2868e439ea5/diff/srv/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a68887b6aa089f606fa1bde1be431819c65d2e77955e7c98df5f3b8f4bb71ede/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a6c7de3fb73d8d2e5f056c8e99b66b496dcf0c357f1837e2b34cb703af1bda6a/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a81874b3ff20fe4c7756413888a7fc75eb0f92b90076ae95ece1d6f555dd4bd8/diff/usr/bin/ssh-agent
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/a81874b3ff20fe4c7756413888a7fc75eb0f92b90076ae95ece1d6f555dd4bd8/diff/usr/lib/openssh/ssh-keysign
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b690acad45f80c0812ca87317b7285f709d0ac02eabcf0786232639d6b6690bf/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/b907e26bef49925194d27266993d04cfe6b6293146b080d7a91d430becc72c6d/diff/usr/bin/crontab
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/bf5a3efaaf8e2aa707ce9d6d8125130328592781a2492088475ed5b6c3cfa902/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c1858639c57c81cf775e0784f2d034403e5e71c4c2d659cbb4af022f2ac87d40/diff/usr/bin/ssh-agent
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c1858639c57c81cf775e0784f2d034403e5e71c4c2d659cbb4af022f2ac87d40/diff/usr/lib/openssh/ssh-keysign
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c4f4752ff5c9a4d017292f077a9e1f841534caf45bbdc15af480beeae2bdf7e4/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/c8c1e0f9326aaef662b1055daf42cc679187349a87fa29388476f50fb69b68cb/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d489580dfc0b5eb446235406a92f46a0a6442939032df73e60f93ada2402538c/diff/usr/bin/ssh-agent
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d489580dfc0b5eb446235406a92f46a0a6442939032df73e60f93ada2402538c/diff/usr/lib/openssh/ssh-keysign
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/d77e73e619f9617a7b1567e88bccbe575a4d17f7b0d91a1a8dafb5abe5336302/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/sbin/pam_extrausers_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/de4f11d7dfb96790b90ebf1e4f336bfba5ea85b81a0d13148092e7d62ca68035/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/chage
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/chfn
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/chsh
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/expiry
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/gpasswd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/mount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/newgrp
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/passwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/su
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/umount
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/bin/wall
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/sbin/pam_extrausers_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e3b6cf77c9413c533d9aae1f431ea4d2257e947c6fd99c098533afc65d7bf063/diff/usr/sbin/unix_chkpwd
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e9d800544922d49d73f0e60063768c9e0ba973580da351a71a6f25c60663d1cd/diff/usr/bin/ssh-agent
+- [WARN] SUID/SGID binary not in baseline allowlist: /var/lib/docker/overlay2/e9d800544922d49d73f0e60063768c9e0ba973580da351a71a6f25c60663d1cd/diff/usr/lib/openssh/ssh-keysign
+- [CRITICAL] auditd: no rule watching /etc/shadow
+- [WARN] auditd: no rule watching /etc/passwd
+- [WARN] auditd: no rule watching execve syscalls
+- [INFO] auditd: 1 rule(s) loaded

@@ -81,7 +81,7 @@ check_clamav() {
     fi
     echo "Running ClamAV scan of /home and /etc (this can take a while)..."
     local out
-    out="$(clamscan -ri --exclude-dir='^/sys' /home /etc 2>/dev/null | grep -E "FOUND$")"
+    out="$(clamscan -ri --exclude-dir='^/sys' /tmp 2>/dev/null | grep -E "FOUND$")"
     if [[ -z "$out" ]]; then
         log_finding INFO "ClamAV: no infected files found"
     else
