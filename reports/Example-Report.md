@@ -26,7 +26,7 @@
 - [WARN] rkhunter: Warning: Hidden file found: /usr/share/man/man5/.k5identity.5.gz: gzip compressed data, max compression, from Unix, original size modulo 2^32 22
 - [INFO] ClamAV: no infected files found
 - [INFO] AppArmor: 1 profile(s) enforced, 1 in complain mode
-- [WARN] No SUID baseline file at /home/gp/Projects/Audit-Script/suid-baseline.txt — treating every result as new
+- [WARN] No SUID baseline file at ./suid-baseline.txt — treating every result as new
 - [WARN] SUID/SGID binary not in baseline allowlist: /opt/brave-bin/chrome-sandbox
 - [WARN] SUID/SGID binary not in baseline allowlist: /opt/github-desktop/chrome-sandbox
 - [WARN] SUID/SGID binary not in baseline allowlist: /opt/Mullvad VPN/chrome-sandbox
